@@ -10,6 +10,7 @@ public class Sum {
         System.out.println("Enter third number : ");
         int num3 = sc.nextInt();
         int sum = num1 + num2 + num3;
+        System.out.println("Sum of these three numbers is:");
         System.out.println(num1 + " + " + num2 + " + " + num3 + " = " + sum);
     }
 }
