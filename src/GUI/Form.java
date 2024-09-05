@@ -9,7 +9,7 @@ public class Form {
         // Create the frame
         JFrame frame = new JFrame("Account Form");
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-        frame.setSize(400, 450);
+        frame.setSize(500, 550);
 
         // Create the panel to hold components
         JPanel panel = new JPanel();
