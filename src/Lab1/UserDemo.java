@@ -1,4 +1,4 @@
-//Program to create a class User with fields: name, address, email, age.
+package Lab1;//Program to create a class Lab1.User with fields: name, address, email, age.
 //Initialize the value by taking it from user
 import java.util.*;
 class User{

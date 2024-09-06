@@ -1,3 +1,5 @@
+package Lab1;
+
 //Program to print Hello World
 public class HelloWorld{
     public static void main(String[] args){

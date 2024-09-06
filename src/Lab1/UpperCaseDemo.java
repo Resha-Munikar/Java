@@ -1,4 +1,4 @@
-//Program to take your name as input and print in uppercase
+package Lab1;//Program to take your name as input and print in uppercase
 import java.util.*;
 public class UpperCaseDemo {
     public static void main(String[] args){

@@ -1,3 +1,5 @@
+package Practice;
+
 //Program to print odd numbers from 1 - 100
 public class Odd {
     public static void main(String[] args){

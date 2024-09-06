@@ -1,4 +1,4 @@
-//Program to calculate percentage of a student
+package Practice;//Program to calculate percentage of a student
 import java.util.*;
 public class Percentage {
     public static void main(String[] args){
@@ -18,7 +18,7 @@ public class Percentage {
         total = english+nepali+math+social+account;
         percentage = (total/500)*100;
         System.out.println("Total marks : "+ total);
-        System.out.println("Percentage : "+ percentage + "%");
+        System.out.println("Practice.Percentage : "+ percentage + "%");
 
     }
 }

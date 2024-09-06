@@ -1,4 +1,6 @@
-//Program to create a class Car and its child class Tesla and illustrate constructor chaining.
+package Lab1;
+
+//Program to create a class Lab1.Car and its child class Lab1.Tesla and illustrate constructor chaining.
 class Car{
     String colour;
     int model;

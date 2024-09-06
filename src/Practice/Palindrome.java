@@ -1,4 +1,4 @@
-//Program to input a number from user and check if it is palindrome or not
+package Practice;//Program to input a number from user and check if it is palindrome or not
 import java.util.*;
 public class Palindrome {
     public static void main(String[] args){

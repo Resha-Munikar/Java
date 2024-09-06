@@ -1,4 +1,4 @@
-//Program to ask user to enter his/her name and greet them
+package Practice;//Program to ask user to enter his/her name and greet them
 import  java.util.*;
 public class Greet {
     public static void main(String[] args){

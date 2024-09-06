@@ -1,3 +1,5 @@
+package Lab1;
+
 //Program to show that parents constructor is called by default
 class Animal{
     Animal(){

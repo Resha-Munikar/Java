@@ -1,4 +1,4 @@
-//Program to input numbers from user and sorting it
+package Practice;//Program to input numbers from user and sorting it
 import java.util.*;
 public class Sort {
     public static void main(String[] args){
