@@ -1,7 +1,10 @@
 package GUI;
 import javax.swing.*;
 import java.awt.*;
-public class AccountForm extends JFrame {
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
+
+public class AccountForm extends JFrame{
     AccountForm() {
         setLayout(null);
         JLabel l1 = new JLabel("Account Type *");
@@ -75,7 +78,36 @@ public class AccountForm extends JFrame {
         JTextField tf8 = new JTextField();
         tf8.setBounds(120,420,300,30);
         add(tf8);
-        setSize(500,500);
+        JButton btn3 = new JButton("Submit");
+        btn3.setBounds(5,460,100,30);
+        add(btn3);
+        JTextArea info = new JTextArea();
+        info.setBounds(5,500,400,200);
+        add(info);
+        info.setVisible(false);
+        ActionListener obj = new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                info.setVisible(true);
+                if(jb1.isSelected()){
+                    info.append("Account Type : " + jb1.getText() + "\n");
+                }
+                if(jb2.isSelected()){
+                    info.append("Account Type : "+ jb2.getText()+ "\n");
+                }
+                info.append("First Name : " + tf2.getText()+ "\n");
+                info.append("Last Name : " + tf3.getText()+ "\n");
+                info.append("Country : " + combo.getSelectedItem()+ "\n");
+                info.append("Street Address : " + tf4.getText()+ "\n");
+                info.append("Street Address 2 : " + tf5.getText()+ "\n");
+                info.append("City : " + tf6.getText()+ "\n");
+                info.append("Province : " + provincebox.getSelectedItem()+ "\n");
+                info.append("Zip/Postal Code : " + tf7.getText()+ "\n");
+                info.append("Phone Number : " + tf8.getText()+ "\n");
+            }
+        };
+        btn3.addActionListener(obj);
+        setSize(900,900);
         setVisible(true);
         setDefaultCloseOperation(EXIT_ON_CLOSE);
     }
