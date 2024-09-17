@@ -45,6 +45,7 @@ public class NotepadDemo extends JFrame{
         JScrollPane sp = new JScrollPane(a);
         sp.setVerticalScrollBarPolicy(JScrollPane.VERTICAL_SCROLLBAR_ALWAYS);
         add(sp,BorderLayout.CENTER);
+        setJMenuBar(mb);
         setSize(400,400);
         setVisible(true);
         setDefaultCloseOperation(EXIT_ON_CLOSE);

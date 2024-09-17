@@ -1,7 +1,5 @@
 package RmiDemo;
-import java.rmi.*;
-import java.rmi.registry.LocateRegistry;
-import java.rmi.registry.Registry;
+import java.rmi.registry.*;
 
 public class Server {
     public static void main(String[] args) {
@@ -9,7 +7,6 @@ public class Server {
             CalcRemote obj = new CalcRemote();
             Registry rg = LocateRegistry.createRegistry(9000);
             rg.rebind("add", obj);
-            rg.rebind("sub", obj);
             System.out.println("Server is ready.");
         }catch(Exception e){
             System.out.println("Server failed "+ e);

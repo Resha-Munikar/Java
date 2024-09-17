@@ -1,7 +1,7 @@
 package RmiDemo;
 
 import java.rmi.RemoteException;
-import java.rmi.server.UnicastRemoteObject;
+import java.rmi.server.*;
 
 public class CalcRemote extends UnicastRemoteObject implements Calc {
     CalcRemote() throws RemoteException{
