@@ -30,10 +30,10 @@ public class SwapSquareDemo extends JFrame implements ActionListener{
         new SwapSquareDemo();
     }
     public void actionPerformed(ActionEvent e){
-        int num1,num2;
-        num1 = Integer.parseInt(tf1.getText());
-        num2 = Integer.parseInt(tf2.getText());
         try{
+            int num1,num2;
+            num1 = Integer.parseInt(tf1.getText());
+            num2 = Integer.parseInt(tf2.getText());
             if(e.getSource() == btn1){
                 int temp = num1;
                 num1 = num2;

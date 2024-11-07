@@ -4,7 +4,8 @@ import java.awt.*;
 import java.awt.event.*;
 public class LoginForm extends JFrame implements ActionListener{
     JLabel l1,l2;
-    JTextField tf1,tf2;
+    JTextField tf1;
+    JPasswordField tf2;
     JButton btn1;
     LoginForm(){
         setTitle("Login Form");
@@ -12,7 +13,7 @@ public class LoginForm extends JFrame implements ActionListener{
         l1 = new JLabel("Username *");
         l2 = new JLabel("Password *");
         tf1 = new JTextField(15);
-        tf2 = new JTextField(15);
+        tf2 = new JPasswordField(15);
         btn1 = new JButton("Login");
         btn1.addActionListener(this);
         add(l1);
