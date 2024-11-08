@@ -9,7 +9,7 @@ public class Server1 {
             PrintWriter pw = new PrintWriter(s.getOutputStream(),true);
             BufferedReader reader = new BufferedReader(new InputStreamReader(s.getInputStream()));
             String name = reader.readLine();
-            pw.println("Name in uppercase : "+ name.toUpperCase());
+            pw.println(name.toUpperCase());
             ss.close();
         }catch(Exception e){
             System.out.println(e);
