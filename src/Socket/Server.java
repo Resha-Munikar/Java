@@ -9,7 +9,7 @@ public class Server {
             Socket s = ss.accept();
             System.out.println("Connection established");
             DataInputStream dis = new DataInputStream(s.getInputStream());
-            String str = dis.readUTF();
+            String str = (String) dis.readUTF();
             System.out.println("Message = "+ str);
             ss.close();
         }catch(Exception e){
