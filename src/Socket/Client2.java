@@ -7,7 +7,7 @@ public class Client2 {
         try{
             Scanner sc = new Scanner(System.in);
             Socket s = new Socket("localhost",1234);
-            PrintWriter pw = new PrintWriter(s.getOutputStream());
+            PrintWriter pw = new PrintWriter(s.getOutputStream(),true);
             BufferedReader reader = new BufferedReader(new InputStreamReader(s.getInputStream()));
             System.out.println("Enter first number : ");
             int num1 = sc.nextInt();

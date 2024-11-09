@@ -7,7 +7,7 @@ public class Server2 {
             ServerSocket ss = new ServerSocket(1234);
             Socket s = ss.accept();
             BufferedReader reader = new BufferedReader(new InputStreamReader(s.getInputStream()));
-            PrintWriter pw = new PrintWriter(s.getOutputStream());
+            PrintWriter pw = new PrintWriter(s.getOutputStream(),true);
             int n1 = Integer.parseInt(reader.readLine());
             int n2 = Integer.parseInt(reader.readLine());
             int sum = n1+n2;
