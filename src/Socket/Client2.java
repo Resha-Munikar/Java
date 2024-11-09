@@ -21,6 +21,7 @@ public class Client2 {
             System.out.println("Sum : "+ sum);
             System.out.println("Difference : "+ diff);
             System.out.println("Product : "+ mul);
+            s.close();
         }catch(Exception e){
             System.out.println(e.getMessage());
         }
