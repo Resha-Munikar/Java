@@ -9,11 +9,11 @@ public class InsertDemo {
             Statement stmt = con.createStatement();
             String a = ("insert into student values (1,'Resha','resa.munikar@gmail.com',4)");
             stmt.executeUpdate(a);
-            String b = ("insert into student values (2,'Aakash','aakash7@gmail.com',4)");
+            String b = ("insert into student values (2,'Aakash','aakash7@gmail.com',5)");
             stmt.executeUpdate(b);
-            String c = ("insert into student values (3,'Rashika','rashika1.munikar@gmail.com',4)");
+            String c = ("insert into student values (3,'Rashika','rashika1.munikar@gmail.com',5)");
             stmt.executeUpdate(c);
-            String d = ("insert into student values (4,'Deepa','deepa123@gmail.com',4)");
+            String d = ("insert into student values (4,'Deepa','deepa123@gmail.com',6)");
             stmt.executeUpdate(d);
             String e = ("insert into student values (5,'Laxmi','laxmi10@gmail.com',4)");
             stmt.executeUpdate(e);
