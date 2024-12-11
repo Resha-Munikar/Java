@@ -1,5 +1,5 @@
 package RMI;
-import java.rmi.RemoteException;
+import java.rmi.*;
 import java.rmi.server.*;
 public class ReverseRemote extends UnicastRemoteObject implements Reverse{
     ReverseRemote() throws RemoteException{
