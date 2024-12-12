@@ -4,7 +4,7 @@ import java.sql.*;
 public class UpdatePrepStmt {
     public static void main(String[] args) {
         try {
-            String url = "jdbc:mysql://localhost:3306/STUDENTS";
+            String url = "jdbc:mysql://localhost:3306/student";
             Class.forName("com.mysql.cj.jdbc.Driver");
             Connection con = DriverManager.getConnection(url, "root", "Bri$ti1010");
             String query = "UPDATE student SET Semester = ? WHERE Semester = ?";
